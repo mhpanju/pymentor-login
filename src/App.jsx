@@ -38,7 +38,7 @@ function App() {
           appearance={{ theme: ThemeSupa }}
           theme="default"
           providers={['google']}
-          // redirectTo="http://localhost:8501/"
+          redirectTo="http://localhost:8501/"
         />
       </div>
     </div>
