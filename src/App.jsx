@@ -23,14 +23,24 @@ function App() {
   }, [])
 
   return (
-    <div className="auth-wrapper" style={{ maxWidth: 400, margin: 'auto', paddingTop: '10%' }}>
-      <Auth
-        supabaseClient={supabase}
-        appearance={{ theme: ThemeSupa }}
-        theme="dark"
-        providers={['google']}
-        redirectTo="https://auth.pymentor.ai"
-      />
+    <div
+      style={{
+        display: 'flex',
+        height: '100vh',
+        alignItems: 'center',
+        justifyContent: 'center',
+        backgroundColor: '#f3f4f6',
+      }}
+    >
+      <div style={{ width: '100%', maxWidth: '400px' }}>
+        <Auth
+          supabaseClient={supabase}
+          appearance={{ theme: ThemeSupa }}
+          theme="default"
+          providers={['google']}
+          redirectTo="https://auth.pymentor.ai"
+        />
+      </div>
     </div>
   )
 }
