@@ -38,7 +38,7 @@ function App() {
           appearance={{ theme: ThemeSupa }}
           theme="default"
           providers={['google']}
-          redirectTo="https://auth.pymentor.ai"
+          redirectTo="http://localhost:8501/"
         />
       </div>
     </div>
